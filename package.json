@@ -19,7 +19,9 @@
     "express-session": "^1.17.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.7",
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "express-handlebars": "^5.3.3",
+    "nodemon": "^2.0.12"
   },
   "devDependencies": {
     "express-handlebars": "^5.3.3",
