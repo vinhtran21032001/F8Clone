@@ -1,0 +1,73 @@
+    <div class="body">
+        <div class="body_content">
+            <div class="bg-video">
+                    <video class="video_content" autoplay loop muted>
+                        <source src="/video/bg-video_header.mp4" type="video/mp4">
+                        Your browser is not suport
+                    </video>
+            </div>
+            <div class="body_content_title">
+                <h2 class="body_title">Học lập trình để đi làm!</h2>
+                <p class="body_desc">" Trở thành lập trình viên nhà tuyển dụng luôn săn đón. "</p>
+                <a href="" type="button" class="btn-learn">Học ngay</a>
+            </div>
+            {{!-- Introduce --}}
+            <div class="introduce">
+                <div class="introduce_items">
+                    <img src="/img/hinh1.png" alt="">
+                    <p><span class="highlight-introduce">75.866+</span> <span>người đã tham gia</span></p>
+                </div>
+                 <div class="introduce_items">
+                    <img src="/img/hinh2.png" alt="">
+                    <p><span class="highlight-introduce">8+</span> <span>khóa học dành cho bạn</span></p>
+                </div>
+                 <div class="introduce_items">
+                    <img src="/img/hinh3.png" alt="">
+                   <p><span>Học bất cứ lúc nào, bất cứ nơi đâu.</span></p>
+                </div>
+            </div>
+
+            {{!-- title_course  --}}
+             <div class="top-courses">
+                <div class="title-course">
+                    <h3>Khóa học nổi bật</h3>
+                    <span><strong>75.980+ </strong>người đã học và hàng nghìn trang web được tạo ra mỗi tháng</span>
+                </div>
+                <div class="layout_course">
+                     {{#each courses}}
+                    <div class="card-course">
+                            <a href="courses/{{this.slug}}"><img src={{this.image}} alt=""></a>
+                            <div class="card-course_content">
+                                <a href="courses/{{this.slug}}">
+                                    <p class="name-course">{{this.name}}</p>
+                                </a>
+                                <p class="description-course">{{this.desc}}</p>
+                            </div>
+                    </div>
+                    {{/each}}
+                </div>
+                <a href="/courses" id="sendAll">Xem tất cả</a>
+            </div>
+       
+       {{!-- dynamic banner --}}
+        </div>
+        <div class="banner-dynamic">
+            <div class="title_banner">
+                <h3 id="title">76.639+ người khác đã học. Còn bạn?</h3>
+                <p>"Đừng học lập trình. Nghiện đấy!”</p>
+                <a href="">Thử một lần</a>
+            </div>
+        </div>
+        {{!-- myself --}}
+        <div class="my-info">
+            <img  class="my-pic" src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/174067077_1165664380550382_9131255507050420711_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=e3f864&_nc_ohc=KHysQH-UFgEAX_7etcG&_nc_ht=scontent-sin6-2.xx&oh=8f38661648bed46fd5177f279c448521&oe=6144B14F" alt="">
+            <div class="my-slogan">
+                <p>"... คุณจะมีข้อสงสัยอย่างมาก วันหนึ่งคุณจะรู้สึกหนักแน่นเกี่ยวกับบางสิ่งบางอย่าง แล้ววันรุ่งขึ้นคุณจะสงสัยว่างานและความฝันของคุณมีความสำคัญจริงๆ หรือไม่ มันทำ
+
+                แต่คุณต้องเตือนตัวเองตลอดเวลา งานของคุณเป็นจริง ถ้าคุณหยุด ถ้าคุณเลิก...บางสิ่งจะสูญหายไปตลอดกาล งานของคุณสร้างความแตกต่าง ทำต่อไป. "</p>
+                <p class="tacgia"> - Vinh Trần - </p>
+                <a href="" class="my-btn">Tìm hiểu thêm</a>
+            </div>
+        </div>
+    </div>
+  

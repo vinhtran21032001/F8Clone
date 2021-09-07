@@ -1,0 +1,67 @@
+<div class="wrapper">
+    <div class="btn-top">
+        <button class="btn-fill selected">Theo lộ trình</button>
+        <button class="btn-fill">Mới nhất</button>
+    </div>
+            <div class="layout_course">
+                {{#each courses}}
+                    <div class="card-course">
+                            <a href="courses/{{this.slug}}?q=1"><img src={{this.image}} alt=""></a>
+                            <div class="card-course_content">
+                                <a href="courses/{{this.slug}}">
+                                    <p class="name-course">{{this.name}}</p>
+                                </a>
+                                <p class="description-course">{{this.desc}}</p>
+                            </div>
+                    </div>
+                    {{/each}}
+                    {{!-- <div class="card-course">
+                            <img src="https://img.youtube.com/vi/uz5LIP85J5Y/sddefault.jpg" alt="">
+                            <div class="card-course_content">
+                                <p class="name-course">Responsive Với Grid System</p>
+                                <p class="description-course">Trong khóa này chúng ta sẽ học về cách xây dựng giao diện web responsive với Grid System, tương tự Bootstrap 4.</p>
+                            </div>
+                    </div>
+                    <div class="card-course">
+                            <img src="https://img.youtube.com/vi/uz5LIP85J5Y/sddefault.jpg" alt="">
+                            <div class="card-course_content">
+                                <p class="name-course">Responsive Với Grid System</p>
+                                <p class="description-course">Trong khóa này chúng ta sẽ học về cách xây dựng giao diện web responsive với Grid System, tương tự Bootstrap 4.</p>
+                            </div>
+                    </div>
+                    <div class="card-course">
+                            <img src="https://img.youtube.com/vi/uz5LIP85J5Y/sddefault.jpg" alt="">
+                            <div class="card-course_content">
+                                <p class="name-course">Responsive Với Grid System</p>
+                                <p class="description-course">Trong khóa này chúng ta sẽ học về cách xây dựng giao diện web responsive với Grid System, tương tự Bootstrap 4.</p>
+                            </div>
+                    </div>
+                    <div class="card-course">
+                            <img src="https://img.youtube.com/vi/uz5LIP85J5Y/sddefault.jpg" alt="">
+                            <div class="card-course_content">
+                                <p class="name-course">Responsive Với Grid System</p>
+                                <p class="description-course">Trong khóa này chúng ta sẽ học về cách xây dựng giao diện web responsive với Grid System, tương tự Bootstrap 4.</p>
+                            </div>
+                    </div>
+                    <div class="card-course">
+                            <img src="https://img.youtube.com/vi/uz5LIP85J5Y/sddefault.jpg" alt="">
+                            <div class="card-course_content">
+                                <p class="name-course">Responsive Với Grid System</p>
+                                <p class="description-course">Trong khóa này chúng ta sẽ học về cách xây dựng giao diện web responsive với Grid System, tương tự Bootstrap 4.</p>
+                            </div>
+                    </div> --}}
+            </div>
+</div>
+
+<script>
+        var btnFill = document.querySelectorAll('.btn-fill');
+        btnFill.forEach(item => {
+            item.addEventListener('click', () => {
+                btnFill.forEach(item1=> {
+                    item1.classList.remove('selected')
+                })
+                item.classList.toggle('selected')
+            })
+        })
+
+</script>

@@ -1,0 +1,94 @@
+.footer {
+    margin-bottom: 0 auto;
+    --spacing : 10px;
+    width: 100%;
+    height: auto;
+    background: #151515;
+    &_content {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        padding: 50px 20px 100px 20px;
+
+        
+        .lg-item {
+            width: 25% - var(--spacing);
+            padding: var(--spacing);
+            img {
+                height: 50px;
+                width: auto;
+                object-fit: cover;
+            }
+            p {
+                
+                color: hsla(0,0%,100%,.7);
+                font-size: 16px;
+                margin-top: 30px;
+                display: block;
+            }
+            p:last-child{
+                margin-top: 60px;
+            }
+        }
+        .sm-item {
+            width: 23%;
+            height: 100%;
+            padding: var(--spacing);
+            color: white;
+            h3{
+                font-size: 20px;
+            }
+            a {
+                text-decoration: none;
+                color: hsla(0,0%,100%,.7) ;
+                font-size: 16px;
+                display: block;
+                width: 100%;
+                margin: 20px 0;
+                transition: all 0.3s linear;
+            }
+            a:hover {
+                color: purple
+            }
+        }
+        .folow {
+            h3 {
+                font-size: 20px;
+                color: white;
+            }
+            input {
+                box-sizing: border-box;
+                width: 240px;
+                height: 40px;
+                background: #272727;
+                color: hsla(0,0%,100%,.6);
+                outline:  none;
+                border:none;
+                border-radius: 20px;
+                padding: 10px 15px;
+                margin: 40px 0 20px;
+            }
+            input:placeholder {
+                font-size: 16px;
+            }
+            a {
+                box-sizing: border-box;
+                display: block;
+                width: 120px;
+                height: 40px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                padding: 0 15px;
+                background: #b80275;
+                text-decoration: none;
+                line-height: 40px;
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 1.2;
+                font-weight: 500;
+            }
+        }
+    }
+}

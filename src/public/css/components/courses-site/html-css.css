@@ -1,0 +1,115 @@
+.content-courses-detail {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden; }
+  .content-courses-detail .content-left {
+    width: 70%; }
+    .content-courses-detail .content-left .lesson-video {
+      position: fixed;
+      width: 70%;
+      height: 550px;
+      z-index: 3; }
+      .content-courses-detail .content-left .lesson-video iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .content-courses-detail .content-left .content-bottom {
+      max-height: calc(100% - 200px);
+      margin-top: 550px;
+      padding-left: 50px;
+      overflow: scroll; }
+      .content-courses-detail .content-left .content-bottom .menu-comment .menu li {
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        color: #333;
+        margin: 15px 0;
+        margin-right: 20px; }
+      .content-courses-detail .content-left .content-bottom .menu-comment::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #777;
+        left: 0;
+        top: 100%; }
+      .content-courses-detail .content-left .content-bottom .comment-block .title {
+        margin: 20px 0; }
+      .content-courses-detail .content-left .content-bottom .comment-block .thongke {
+        display: flex;
+        justify-content: space-between; }
+        .content-courses-detail .content-left .content-bottom .comment-block .thongke p {
+          color: black;
+          font-size: 18px;
+          text-transform: bold;
+          font-weight: 700; }
+        .content-courses-detail .content-left .content-bottom .comment-block .thongke .social-network {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .content-courses-detail .content-left .content-bottom .comment-block .thongke .social-network p {
+            margin-right: 10px; }
+          .content-courses-detail .content-left .content-bottom .comment-block .thongke .social-network ion-icon {
+            font-size: 35px;
+            color: blue;
+            margin-right: 10px; }
+      .content-courses-detail .content-left .content-bottom .comment-block .comment-block_content {
+        max-height: 60%;
+        margin-top: 20px; }
+        .content-courses-detail .content-left .content-bottom .comment-block .comment-block_content ul li {
+          display: flex; }
+          .content-courses-detail .content-left .content-bottom .comment-block .comment-block_content ul li .avatar-user-comment {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-right: 10px; }
+          .content-courses-detail .content-left .content-bottom .comment-block .comment-block_content ul li .info-user-comment {
+            max-width: 500px;
+            background: #f2f2f2;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 30px; }
+  .content-courses-detail .content-right {
+    overflow: scroll;
+    scroll-behavior: smooth;
+    box-sizing: inherit;
+    width: 30%;
+    box-sizing: border-box; }
+    .content-courses-detail .content-right::-webkit-scrollbar {
+      display: none; }
+    .content-courses-detail .content-right_heading {
+      display: flex;
+      flex-direction: column;
+      margin: 10px; }
+      .content-courses-detail .content-right_heading .caption {
+        font-size: 18px;
+        margin-bottom: 5px; }
+      .content-courses-detail .content-right_heading .tiendo {
+        font-size: 14px;
+        color: #999; }
+    .content-courses-detail .content-right .menu-lesson {
+      width: 100%;
+      height: 100%; }
+      .content-courses-detail .content-right .menu-lesson .lesson {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600; }
+      .content-courses-detail .content-right .menu-lesson_item {
+        width: 100%;
+        border-bottom: 0.5px solid #eee;
+        padding: 10px 0 10px 30px;
+        font-size: 16px;
+        transition: all .2s linear;
+        text-decoration: none;
+        color: #333; }
+        .content-courses-detail .content-right .menu-lesson_item .time {
+          font-size: 12px;
+          color: #333;
+          padding: 5px; }
+      .content-courses-detail .content-right .menu-lesson_item:first-child {
+        border-top: 0.5px solid #eee; }
+      .content-courses-detail .content-right .menu-lesson_item:hover {
+        background: #ffdab5;
+        transition: all .2s linear; }

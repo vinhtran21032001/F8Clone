@@ -1,0 +1,320 @@
+.login {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1609270460854-e8ea8c0b591f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=723&q=80');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding-top: 50px;
+    position: relative;
+    .container {
+        margin: 0px auto;
+        max-width: 400px;
+        min-height: 600px;
+        border: 1px solid black;
+        display: flex;
+        background-color: white;
+        border-radius: 30px;
+        border: none;
+        overflow: hidden;
+        .login_heading {
+            top: 0;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            position: relative;
+            height: 50px;
+            margin-bottom:50px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: .3s linear;
+            &:hover{
+                background-color: #f4f4f4;
+                transition: .3s linear;
+            }
+            .heading-line {
+                position: absolute;
+                top: 0; left: 0;
+                width: 100%;
+                height: 6px;
+                margin-left: auto;
+                background-color: orangered;
+            }
+            .heading-background {
+                position: absolute;
+                top: 0; left: 0;
+                width: 50%;
+                height: 50px;
+                background-color: orangered;
+                border-radius: 30px;
+                transition: .3s ;
+            }
+            .heading {
+                padding: 10px 0;
+                width: 50%;
+                height: 100%;
+                line-height: 50px;
+                text-align: center;
+                font-size: 25px;
+                font-weight: 500;
+                color: black;
+                background: transparent;           
+                transition: .3s linear;
+            }
+            .login-heading {
+                color: white;
+            }
+        }
+        .login-container {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            top: 80px;
+            right: 0;
+            transition: .3s ;
+            .login-title {
+                width: 90%;
+                margin-bottom: 50px;
+                font-size: 18px;
+                display: flex;
+                color: #999;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                h3 {
+                    color: black;
+                    margin: 10px;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+            }
+            .input-block {
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+                .input-field {
+                    position: relative;
+                    width: 350px;
+                    height: 50px;
+                    background-color: rgb(231, 230, 230);
+                    border-radius: 30px;
+                    outline: none;
+                    display:grid;
+                    grid-template-columns: 20% 80%;
+                    overflow: hidden;
+                    i {
+                        width: 70px;
+                        height: 50px;
+                        font-size: 25px;
+                        line-height: 50px;
+                        text-align: center;
+                        border-radius: 30px;
+                        background-color: orangered;
+                        color: white;
+                    }
+                    input {
+                        height: 100%;
+                        background-color: transparent;
+                        outline: none;
+                        border : none ;
+                        font-size: 22px;
+                        padding: 0 15px;
+                        color: black;
+                        font-weight: 500;
+                    }
+                    
+                }
+            }
+            .social-title {
+                color: #333;
+                font-size: 20px;
+                padding: 20px;
+            }
+            .social-media {
+                a{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                color: black;
+                border: 1px solid black;
+                text-decoration: none;
+                display: inline-block;
+                line-height: 40px;
+                text-align: center;
+                font-size: 22px;
+                margin: 0 20px;
+                transition: .2s ;
+                &:hover {
+                    color: orangered;
+                    border: 1px solid orangered;
+                    transition: .2s ;
+                    }
+                }
+            }
+        }
+        .error-message {
+            margin-right: auto;
+            margin-left: 60px;
+            color: red;
+            height: 20px;
+            width: 100%;
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+        .registor-container {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 80px;
+            align-items: center;
+            left: 130%; 
+            transition: .3s ;
+            .login-title {
+                width: 90%;
+                margin-bottom: 50px;
+                font-size: 18px;
+                display: flex;
+                color: #999;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                h3 {
+                    color: black;
+                    margin: 10px;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+            }
+            .input-block {
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                .input-field {
+                    position: relative;
+                    width: 80%;
+                    height: 50px;
+                    background-color: rgb(231, 230, 230);
+                    border-radius: 30px;
+                    outline: none;
+                    display:grid;
+                    grid-template-columns: 20% 80%;
+                    overflow: hidden;
+                    i {
+                        width: 70px;
+                        height: 50px;
+                        font-size: 25px;
+                        line-height: 50px;
+                        text-align: center;
+                        border-radius: 30px;
+                        background-color: orangered;
+                        color: white;
+                    }
+                    input {
+                        height: 100%;
+                        background-color: transparent;
+                        outline: none;
+                        border : none ;
+                        font-size: 22px;
+                        padding: 0 15px;
+                        color: black;
+                        font-weight: 500;
+                    }
+                    
+                }
+            }
+            .social-title {
+                color: #333;
+                font-size: 20px;
+                padding: 20px;
+            }
+            .social-media {
+                a{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                color: black;
+                border: 1px solid black;
+                text-decoration: none;
+                display: inline-block;
+                line-height: 40px;
+                text-align: center;
+                font-size: 22px;
+                margin: 0 20px;
+                transition: .2s ;
+                &:hover {
+                    color: orangered;
+                    border: 1px solid orangered;
+                    transition: .2s ;
+                    }
+                }
+            }
+        }
+
+    }
+    .modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); 
+        &-content {
+            width: 500px;
+            height: 300px;
+            top: 35%;
+            left :50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 30px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation: slideForm .4s ease-in-out;
+            .btn-close {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                font-size: 35px;
+                right: 10px;
+                top: 0;
+                cursor: pointer;
+            }
+            P {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            .btn-login-now {
+                margin-top: 30px;
+            }
+            @keyframes slideForm {
+                0% {
+                    top: 0;
+                    left: 50%;
+                }
+                100% {
+                    top: 35%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+}

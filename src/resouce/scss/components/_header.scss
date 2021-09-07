@@ -1,0 +1,132 @@
+.views_header {
+    position: relative;
+    width: 100%;
+    height: 50px; 
+    z-index: 2; 
+    .header{
+        width: 100%;
+        position: fixed;
+        height: 50px;
+        background-color: black;
+        z-index: 2;
+        line-height: 50px;
+        top: 0; 
+        animation: headerslide 1s;
+        transition: background-color 0.5s;
+        &_content {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            color:  white;
+            flex-wrap: nowrap;
+            .logo {
+               margin-top: 5px;
+                    img {
+                        height: 30px;
+                        width: auto;
+                        object-fit: cover;
+                    }
+            }
+            .links {
+                width: 50%;
+                height: 100%;
+                margin-left: 30px;
+                .menu-top {
+                    margin: 0 20px;
+                    padding: 0;
+                    .menu-item {
+                        width: 150px;
+                        height: 100%;
+                        display: inline-block;
+                        text-align: center;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            letter-spacing: 1.1px;
+                            cursor: pointer;
+                        }
+                        .sub-menu {
+                            position: relative;
+                            .sub-menu-item {
+                                visibility: hidden; 
+                                position: absolute;
+                                display: block;
+                                background-color: white;
+                                min-width: 250px;
+                                color:black;
+                                font-size: 18px;
+                                padding: 0;
+                                z-index: -100;
+                                // transform: translateY(-2rem);
+                                opacity: 0;
+                                text-align: left;
+                                box-sizing: inherit;
+                    
+                                transition: all 0.3s ease-in-out 0s, transform 0s visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+                                li {
+                                    list-style: none;
+                                    width: 100%;
+                                    padding-left: 20px;
+                                    color: #333;
+                                    &:hover {
+                                        background-color: orangered;
+                                        color: white;
+                                    }
+                                    transition: all .3s ;
+                                }
+                            }
+                            &:hover .sub-menu-item {
+                                visibility: visible;
+                                z-index: 1;
+                                transform: translateY(0);
+                                opacity: 1;
+                                transition: all .4s ease-in-out;
+                            }
+                        }
+                        
+                        
+                    }
+                }
+            }
+            .registor {
+                position: absolute;
+                right: 0;
+                span {
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 600;
+                    position: relative;
+                    padding: 0 10px;
+                    cursor: pointer;
+                    letter-spacing: 1.01px;
+                }
+                span:first-child::after{
+                    content: "";
+                    width: 1px;
+                    height: 100%;
+                    background-color: #999;
+                    position: absolute;
+                    right: 0px;
+                    top: 1px;
+                }
+            }
+        }
+    }
+
+}   
+
+
+
+@keyframes headerslide {
+    0% {
+        margin-top: 30px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}

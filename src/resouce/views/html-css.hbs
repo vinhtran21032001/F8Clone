@@ -1,0 +1,110 @@
+<div class="content-courses-detail">
+    <div class="content-left">
+        <div class="lesson-video">
+            <iframe src="https://www.youtube.com/embed/{{data.lesson}}" autoplay muted loop frameborder="0"></iframe>
+        </div>
+        <div class="content-bottom">
+            <div class="menu-comment">
+                <ul class="menu">
+                    <li>Tổng quan</li>
+                    <li>Ghi chú</li>
+                    <li>Liên quan</li>
+                </ul>
+            </div>
+            <div class="comment-block">
+                <div class="title">
+                    <p>Tham gia nhóm <a>Học lập trình tại F8</a> trên Facebook để cùng nhau trao đổi trong quá trình học tập <3</p>
+                    <p>Các bạn subscribe kênh youtube <a>F8 Offical</a> để nhận thông báo khi có các bài học mới nhé <3</p>
+                </div>
+                <div class="thongke">
+                    <p>103 hỏi đáp</p>
+                    <div class="social-network">
+                        <p>Chia sẻ</p>
+                        <ion-icon style="color: #4080ff;" name="logo-facebook"></ion-icon>
+                        <ion-icon style="color: orangered;" name="mail"></ion-icon>
+                        <ion-icon style="color: gray;" name="link"></ion-icon>
+                    </div>
+                </div>
+                <div class="comment-block_content">
+                    <ul>
+                        <li>
+                            <img src="/img/hinh1.png" class="avatar-user-comment" alt="">
+                            <div class="info-user-comment">
+                                <h4 class="name-user-comment">Trần Vinh</h4>
+                                <p>em sinh năm 2005 hiện học lớp 10, đã có hứng thú mới bộ môn lập trình này, em đang học theo F8,mong sau có thể tiếp thu được nhiều kinh nghiệm ạ</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/hinh1.png" class="avatar-user-comment" alt="">
+                            <div class="info-user-comment">
+                                <h4 class="name-user-comment">Trần Vinh</h4>
+                                <p>em sinh năm 2005 hiện học lớp 10, đã có hứng thú mới bộ môn lập trình này, em đang học theo F8,mong sau có thể tiếp thu được nhiều kinh nghiệm ạ</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/hinh1.png" class="avatar-user-comment" alt="">
+                            <div class="info-user-comment">
+                                <h4 class="name-user-comment">Trần Vinh</h4>
+                                <p>em sinh năm 2005 hiện học lớp 10, đã có hứng thú mới bộ môn lập trình này, em đang học theo F8,mong sau có thể tiếp thu được nhiều kinh nghiệm ạ</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/hinh1.png" class="avatar-user-comment" alt="">
+                            <div class="info-user-comment">
+                                <h4 class="name-user-comment">Trần Vinh</h4>
+                                <p>em sinh năm 2005 hiện học lớp 10, đã có hứng thú mới bộ môn lập trình này, em đang học theo F8,mong sau có thể tiếp thu được nhiều kinh nghiệm ạ</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/hinh1.png" class="avatar-user-comment" alt="">
+                            <div class="info-user-comment">
+                                <h4 class="name-user-comment">Trần Vinh</h4>
+                                <p>em sinh năm 2005 hiện học lớp 10, đã có hứng thú mới bộ môn lập trình này, em đang học theo F8,mong sau có thể tiếp thu được nhiều kinh nghiệm ạ</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/hinh1.png" class="avatar-user-comment" alt="">
+                            <div class="info-user-comment">
+                                <h4 class="name-user-comment">Trần Vinh</h4>
+                                <p>em sinh năm 2005 hiện học lớp 10, đã có hứng thú mới bộ môn lập trình này, em đang học theo F8,mong sau có thể tiếp thu được nhiều kinh nghiệm ạ</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/hinh1.png" class="avatar-user-comment" alt="">
+                            <div class="info-user-comment">
+                                <h4 class="name-user-comment">Trần Vinh</h4>
+                                <p>em sinh năm 2005 hiện học lớp 10, đã có hứng thú mới bộ môn lập trình này, em đang học theo F8,mong sau có thể tiếp thu được nhiều kinh nghiệm ạ</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/hinh1.png" class="avatar-user-comment" alt="">
+                            <div class="info-user-comment">
+                                <h4 class="name-user-comment">Trần Vinh</h4>
+                                <p>em sinh năm 2005 hiện học lớp 10, đã có hứng thú mới bộ môn lập trình này, em đang học theo F8,mong sau có thể tiếp thu được nhiều kinh nghiệm ạ</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="content-right">
+        <div class="content-right_heading">
+            <h3 class="name">Javascript cơ bản</h3>
+            <p class="tiendo">Chưa hoàn thành bài học nào.</p>
+        </div>
+        <div class="menu-lesson">
+            {{#each data.courses}}
+              <a class="lesson" href="?q={{this.lessonID}}">
+                  <div class="menu-lesson_item">
+                    <div class="name-course"><span class="count-lesson">{{this.lessonID}}. </span>{{this.name}}</div>
+                    <p class="time">03:15</p>
+                              </div>
+              </a>
+                {{/each}}
+            
+        </div>
+
+    </div>
+</div>

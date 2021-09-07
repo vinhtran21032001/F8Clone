@@ -1,0 +1,23 @@
+@import 'variable';
+@import 'components/header';
+@import 'components/home-site/video-bg.scss';
+@import 'components/footer';
+@import 'components/home-site/topcourse';
+@import 'components/home-site/banner-dynamic';
+@import 'components/courses-site/courses.scss';
+@import 'components/courses-site/html-css.scss';
+@import 'components/login-site/login';
+@import './usage/button-primary.scss';
+
+*{
+    font-family: 'PT sans', sans-serif;
+    box-sizing: inherit;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    background: white;
+    position: relative;
+}

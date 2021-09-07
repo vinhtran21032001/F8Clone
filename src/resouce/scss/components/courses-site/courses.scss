@@ -1,0 +1,24 @@
+@import '../../usage/card-courses';
+.layout_course {
+    width: 80%;
+    margin: 50px auto;
+}
+.btn-top {
+    margin-top: 50px;
+    text-align: center;
+    .btn-fill {
+        height: 30px;
+        width: 120px;
+        line-height: 25px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        font-size: 15px;
+        color: #333;
+    }
+    .selected {     
+        background-color: orangered;
+        color: white;
+    }
+}
+
