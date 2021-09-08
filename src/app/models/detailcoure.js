@@ -5,6 +5,8 @@ const detalcourse = new Schema({
     videoID : {type: String},
     lessonID: {type: String},
     slug: {type: String},
+}, {
+    collection: "detailcourses"
 })
 
 module.exports = mongoose.model('detailcourse', detalcourse);

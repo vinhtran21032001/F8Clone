@@ -32,9 +32,9 @@ class LoginController {
                password : password,
            })
            .then(account => {
+               console.log
                if(account) {
                 var id = account._id;
-                console.log(id)
                 var token = JWT.sign({id}, 'mk');
                 res.json({
                     message : true,
