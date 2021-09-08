@@ -8,6 +8,7 @@ class CourseLitmitController {
                 courses = courses.map(course => course.toObject());
                 res.render('home',{courses})
             }) 
+            .catch(err=>res.json(err))
     }
 }
 

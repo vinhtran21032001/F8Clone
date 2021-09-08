@@ -21,11 +21,13 @@
                     }
                 })
             })
+            .catch(err=>res.json(err))
             } else {
                 res.redirect(path + '?q=1')
             }
             
         })
+        .catch(erro=>res.json(erro))
     }
 }
 

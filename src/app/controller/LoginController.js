@@ -46,6 +46,7 @@ class LoginController {
                 })
                }
            })
+           .catch(err => res.json(err))
        }
     }
 }
