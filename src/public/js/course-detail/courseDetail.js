@@ -17,7 +17,7 @@ function changeHeader() {
     var url = window.location.href;
     var header = document.querySelector('.views_header');
     var footer = document.querySelector('.footer');
-    if(url.includes("http://localhost:3000/courses/")) {
+    if(url.includes("/courses/")) {
         header.style.display = "none";
         header.style.height = "0";
         footer.style.display = "none"
@@ -26,7 +26,7 @@ function changeHeader() {
 }
 
 function main() {   
-    if(window.location.href.includes("http://localhost:3000/courses/")) {
+    if(window.location.href.includes("/courses/")) {
         scrollComment();
     }
     changeHeader();

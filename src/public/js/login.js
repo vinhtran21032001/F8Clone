@@ -113,7 +113,7 @@ function registor(e) {
             username : usernameField.value,
             password : passwordField.value
         }
-        fetch('http://localhost:3000/login', {
+        fetch('/login', {
             method : "POST",
             body : JSON.stringify(data),
             headers : {
@@ -159,7 +159,7 @@ function login() {
         password : passwordField.value
     }
    
-    fetch('http://localhost:3000/login', {
+    fetch('/login', {
         method : "POST",
         body : JSON.stringify(data),
         headers : {
