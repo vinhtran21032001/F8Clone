@@ -5,7 +5,7 @@ const loginRoute = require('./login')
 function route(app) {
     app.use('/courses', courseRoute);
     app.use('/login', loginRoute)
-    app.use('/https://f8site-clone.herokuapp.com/', courseLitmitRoute)
+    app.use('/', courseLitmitRoute)
 }
 
 module.exports = route;
