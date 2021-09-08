@@ -11,6 +11,7 @@ class CourseController {
                 courses = multiMongooToObject(courses)
                 res.render('courses',{courses})
             }) 
+            .catch(err=>res.json(err))
     }
     slug(req, res, next) {
         var path = req.originalUrl.split('?')[0]

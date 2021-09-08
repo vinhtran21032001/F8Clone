@@ -23,7 +23,8 @@ class LoginController {
                 }).save();
                     return res.json(true)
                 }
-        })
+            })
+            .catch(err=>res.json(err))
        } else {
            var username = req.body.username;
            var password = req.body.password;
