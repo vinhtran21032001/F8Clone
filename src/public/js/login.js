@@ -5,17 +5,15 @@ var btnRegistor = document.querySelector('.btn-registor');
 var btnLogin = document.querySelector('.btn-login')
 var loginHeading = document.querySelector('.login-heading')
 var registorHeading = document.querySelector('.registor-heading');
-
 // main
 function Login() {
+    changeHeader();
     registorHeading.addEventListener('click', function() {
         changeForm('registor')
     })
     loginHeading.addEventListener('click', function() {
         changeForm('login')
     })
-    changeHeader();
-    
 
     btnRegistor.addEventListener('click', ()=> {
         requireField(usernameField, 'username');
@@ -66,7 +64,7 @@ function changeHeader() {
     var url = window.location.href;
     var header = document.querySelector('.views_header');
     var footer = document.querySelector('.footer');
-    if(url.includes("http://localhost:3000/login")) {
+    if(url.includes("/login")) {
         header.style.display = "none";
         header.style.height = "0";
         footer.style.display = "none"

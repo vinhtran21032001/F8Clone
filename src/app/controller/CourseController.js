@@ -37,7 +37,10 @@ class CourseController {
                 }
             })
             .catch(err=> res.json(err))
-        } else {
+        } else if (req.session.passport) {
+            next();
+        }
+         else {
             res.redirect('/login')
         }
 

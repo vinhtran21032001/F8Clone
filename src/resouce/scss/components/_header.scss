@@ -103,15 +103,6 @@
                     cursor: pointer;
                     letter-spacing: 1.01px;
                 }
-                span:first-child::after{
-                    content: "";
-                    width: 1px;
-                    height: 100%;
-                    background-color: #999;
-                    position: absolute;
-                    right: 0px;
-                    top: 1px;
-                }
             }
         }
     }

@@ -45,7 +45,7 @@
                 position: absolute;
                 top: 0; left: 0;
                 width: 50%;
-                height: 50px;
+                height: 40px;
                 background-color: orangered;
                 border-radius: 30px;
                 transition: .3s ;
@@ -53,10 +53,10 @@
             .heading {
                 padding: 10px 0;
                 width: 50%;
-                height: 100%;
-                line-height: 50px;
+                height: 40px;
+                line-height: 35px;
                 text-align: center;
-                font-size: 25px;
+                font-size: 20px;
                 font-weight: 500;
                 color: black;
                 background: transparent;           
@@ -89,7 +89,10 @@
                     color: black;
                     margin: 10px;
                     font-weight: 500;
-                    font-size: 30px;
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 15px;
                 }
             }
             .input-block {
@@ -102,8 +105,8 @@
                 margin-bottom: 10px;
                 .input-field {
                     position: relative;
-                    width: 350px;
-                    height: 50px;
+                    width: 300px;
+                    height: 40px;
                     background-color: rgb(231, 230, 230);
                     border-radius: 30px;
                     outline: none;
@@ -112,9 +115,9 @@
                     overflow: hidden;
                     i {
                         width: 70px;
-                        height: 50px;
+                        height: 40px;
                         font-size: 25px;
-                        line-height: 50px;
+                        line-height: 40px;
                         text-align: center;
                         border-radius: 30px;
                         background-color: orangered;
@@ -125,7 +128,7 @@
                         background-color: transparent;
                         outline: none;
                         border : none ;
-                        font-size: 22px;
+                        font-size: 20px;
                         padding: 0 15px;
                         color: black;
                         font-weight: 500;
@@ -135,21 +138,21 @@
             }
             .social-title {
                 color: #333;
-                font-size: 20px;
+                font-size: 14px;
                 padding: 20px;
             }
             .social-media {
                 a{
-                width: 40px;
-                height: 40px;
+                width: 35px;
+                height: 35px;
                 border-radius: 50%;
                 color: black;
                 border: 1px solid black;
                 text-decoration: none;
                 display: inline-block;
-                line-height: 40px;
+                line-height: 35px;
                 text-align: center;
-                font-size: 22px;
+                font-size: 26px;
                 margin: 0 20px;
                 transition: .2s ;
                 &:hover {

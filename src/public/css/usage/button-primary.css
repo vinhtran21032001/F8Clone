@@ -13,4 +13,9 @@
   text-align: center;
   margin: 0px auto;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: .2s; }
+  .btn-primary:hover {
+    transform: translateY(-4px); }
+  .btn-primary:active {
+    transform: translateY(-2px); }
