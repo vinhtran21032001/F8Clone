@@ -194,7 +194,10 @@
                     color: black;
                     margin: 10px;
                     font-weight: 500;
-                    font-size: 30px;
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 15px;
                 }
             }
             .input-block {
@@ -206,8 +209,8 @@
                 align-items: center;
                 .input-field {
                     position: relative;
-                    width: 80%;
-                    height: 50px;
+                    width: 300px;
+                    height: 40px;
                     background-color: rgb(231, 230, 230);
                     border-radius: 30px;
                     outline: none;
@@ -216,9 +219,9 @@
                     overflow: hidden;
                     i {
                         width: 70px;
-                        height: 50px;
+                        height: 40px;
                         font-size: 25px;
-                        line-height: 50px;
+                        line-height: 40px;
                         text-align: center;
                         border-radius: 30px;
                         background-color: orangered;
